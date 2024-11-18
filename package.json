@@ -1,0 +1,14 @@
+{
+  "name": "task-cli-tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin":{
+    "task": "./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
