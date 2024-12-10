@@ -2,16 +2,19 @@ const fs = require('fs');
 const path = require('path');
 
 /*
-DEFINE PATHS
+ * DEFINE PATHS
+ We are telling Node.js where to store our data and tasks.json file
+
 */
 const DATA_DIR = path.join(__dirname, '../../data')
 const TASKS_FILE = path.join(DATA_DIR, 'tasks.json')
 
 
 /*
-INITIALIZE STORAGE SYSTEM
+ *INITIALIZE STORAGE SYSTEM
+ *CREATE DATA DIRECTORY AND TASKS.JSON FILE IF THEY DO NOT EXIST
 */
-const initailizeStrorage =()=>{
+const initializeStorage = () => {
     try{
         //check if dir exist, if not create it
         if(!fs.existsSync(DATA_DIR)){
@@ -24,7 +27,7 @@ const initailizeStrorage =()=>{
                     tasks: []
                 };
 
-              fs.writeFileSync(TASKS_FILE, JSON.stringify(initialData, null,2   ))
+              fs.writeFileSync(TASKS_FILE, JSON.stringify(initialData, null,2))
         }
 
 
@@ -52,10 +55,10 @@ const readTasks =()=>{
 
 /**
  * SAVE TASKS TO STORAGE
- * @param {Array} tasks Array of taks
+ * @param {Array} tasks Array of tasks to save
  */
 
- const saveTasks=(tasks)=>{
+ const saveTasks = (tasks) => {
     try{
         const data ={
             tasks: tasks
@@ -69,7 +72,7 @@ const readTasks =()=>{
  //functions to use in other files
 
  module.exports = {
-    initailizeStrorage,
+  initializeStorage,
     readTasks,
     saveTasks
  };
