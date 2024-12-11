@@ -4,6 +4,7 @@
 
 // Import our storage utility
 const storage = require('./src/utils/storage');
+const add = require('./src/commands/add');
 
 // Initialize storage when CLI starts
 storage.initializeStorage();
@@ -18,4 +19,14 @@ if (!command) {
     console.log('  update <id> "new description"');
     console.log('  delete <id>');
     process.exit(1);
+}
+
+// Handle commands
+switch (command) {
+  case 'add':
+      add(args[0]);
+      break;
+  default:
+      console.log(`Unknown command: ${command}`);
+      break;
 }
