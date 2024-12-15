@@ -10,7 +10,8 @@ function add(description) {
 
     const newTask = {
         id: tasks.length + 1,
-        description: description,
+        status: 'todo',
+        description: description, 
         status: 'todo',
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString()

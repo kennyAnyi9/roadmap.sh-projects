@@ -40,7 +40,7 @@ const initializeStorage = () => {
 
 /**
 * WRITE FUNCTION TO READ ALL TASKS FROM STORAGE
-* @returns {Array} Aray of tasks
+* @returns {Array} Array of tasks
 */
 
 const readTasks =()=>{

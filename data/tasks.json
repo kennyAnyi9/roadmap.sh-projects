@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "status": "todo",
+      "description": "add task is working",
+      "createdAt": "2024-12-13T14:09:26.988Z",
+      "updatedAt": "2024-12-13T14:09:26.988Z"
+    },
+    {
+      "id": 2,
+      "status": "todo",
+      "description": "second task added",
+      "createdAt": "2024-12-13T14:19:47.203Z",
+      "updatedAt": "2024-12-13T14:19:47.203Z"
+    },
+    {
+      "id": 3,
+      "status": "todo",
+      "description": "second task added",
+      "createdAt": "2024-12-13T14:36:45.674Z",
+      "updatedAt": "2024-12-13T14:36:45.674Z"
+    },
+    {
+      "id": 4,
+      "status": "todo",
+      "description": "second task added",
+      "createdAt": "2024-12-13T14:36:58.393Z",
+      "updatedAt": "2024-12-13T14:36:58.393Z"
+    }
+  ]
+}

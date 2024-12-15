@@ -24,7 +24,7 @@ if (!command) {
 // Handle commands
 switch (command) {
   case 'add':
-      add(args[0]);
+      add(args.join(' '));
       break;
   default:
       console.log(`Unknown command: ${command}`);
